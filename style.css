@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+
+:root {
+  --dark: rgb(20, 20, 20);
+  --green: rgb(23, 250, 68);
+  --purple: rgb(238, 67, 247);
+  
+  --c1: rgb(56, 158, 28);
+  --c2: rgb(130, 45, 186);
+  
+  --left-color: var(--c1);
+  --right-color: var(--c2);
+}
+
+body {  
+  background-color: var(--dark);
+  margin: 0px;
+}
+
+.side {
+  display: grid;
+  height: 100vh;
+  overflow: hidden;
+  place-items: center;
+  position: absolute;
+  width: 100%;
+}
+
+.side .title {
+  font-family: 'East Sea Dokdo', cursive;
+  font-size: 14vw;
+  margin: 0px 10vw;
+  width: 80vw;
+}
+
+.side .fancy {
+  font-family: 'Moon Dance', cursive;
+  font-size: 1.1em;
+  line-height: 0.8em;
+  color: var(--purple);
+}
+
+#left-side {
+  background-color: var(--left-color);
+  width: 60%;
+  z-index: 2;
+}
+
+#left-side .title {  
+  color: var(--dark);  
+}
+
+/* #left-side .fancy {
+  color: var(--right-color);
+} */
+
+#right-side {
+  background-color: var(--right-color);
+}
+
+#right-side .title {
+  color: white;
+}
+
+#right-side .fancy {
+  color: var(--green);
+}
